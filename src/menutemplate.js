@@ -14,10 +14,10 @@ const window = remote.getCurrentWindow();
 var MenuTemplate = function () {
   return [
     {
-      label: 'Kitematic',
+      label: 'Tripod',
       submenu: [
       {
-        label: 'About Kitematic',
+        label: 'About Tripod',
         enabled: !!docker.host,
         click: function () {
           metrics.track('Opened About', {
@@ -182,7 +182,7 @@ var MenuTemplate = function () {
         type: 'separator'
       },
       {
-        label: 'Kitematic',
+        label: 'Tripod',
         accelerator: 'Cmd+0',
         click: function () {
           remote.getCurrentWindow().show();
@@ -199,7 +199,7 @@ var MenuTemplate = function () {
             metrics.track('Opened Issue Reporter', {
               from: 'menu'
             });
-            shell.openExternal('https://github.com/kitematic/kitematic/issues/new');
+            shell.openExternal('https://github.com/sidharthsuresh/tripod');
           }
         }
       ]
