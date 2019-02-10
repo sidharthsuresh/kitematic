@@ -82,7 +82,7 @@ app.on('ready', function () {
   });
 
   mainWindow.webContents.on('did-finish-load', function () {
-    mainWindow.setTitle('Kitematic');
+    mainWindow.setTitle('Tripod');
     mainWindow.show();
     mainWindow.focus();
   });

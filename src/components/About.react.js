@@ -29,12 +29,12 @@ var Preferences = React.createClass({
           <a onClick={this.handleGoBackClick}>Go Back</a>
           <div className="items">
             <div className="item">
-              <RetinaImage src="cartoon-kitematic.png"/>
-              <h4>Docker {packages.name}</h4>
+              <RetinaImage src="tripodlogo.png"/>
+              <h4>{packages.name}</h4>
               <p>{packages.version}</p>
             </div>
           </div>
-          <h3>Kitematic is built with:</h3>
+          <h3>Tripod is built with:</h3>
           <div className="items">
             <div className="item">
               <RetinaImage src="cartoon-docker.png"/>

@@ -65,7 +65,7 @@ module.exports = React.createClass({
           <div className="desc">
             <div className="content">
               <h1>Connect to Docker Hub</h1>
-              <p>Pull and run private Docker Hub images by connecting your Docker Hub account to Kitematic.</p>
+              <p>Pull and run private sawtooth network images by connecting your Docker Hub account to Tripod.</p>
             </div>
           </div>
         </div>

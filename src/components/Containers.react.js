@@ -112,7 +112,7 @@ var Containers = React.createClass({
     metrics.track('Opened Issue Reporter', {
       from: 'app'
     });
-    shell.openExternal('https://github.com/docker/kitematic');
+    shell.openExternal('http://www.iiitmk.ac.in/kba/');
   },
 
   render: function () {
