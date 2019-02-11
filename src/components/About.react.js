@@ -37,11 +37,11 @@ var Preferences = React.createClass({
           <h3>Tripod is built with:</h3>
           <div className="items">
             <div className="item">
-              <RetinaImage src="cartoon-docker.png"/>
+          {/*  <RetinaImage src="cartoon-docker.png"/>*/}
               <h4>Docker Engine</h4>
             </div>
             <div className="item">
-              <RetinaImage src="cartoon-docker-machine.png"/>
+              {/*    <RetinaImage src="cartoon-docker-machine.png"/> */}
               <h4>Docker Machine</h4>
               <p>{packages["docker-machine-version"]}</p>
             </div>

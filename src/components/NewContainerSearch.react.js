@@ -377,7 +377,7 @@ module.exports = React.createClass({
           <div className="new-container-header">
             <div className="search">
             <div className={searchClasses}>
-              <input type="search" ref="searchInput" className="form-control" placeholder="Search for Docker images from Docker Hub" onChange={this.handleChange}/>
+              <input type="search" ref="searchInput" className="form-control" placeholder="Search for Sawtooth containers" onChange={this.handleChange}/>
               <div className={magnifierClasses}></div>
               <div className={loadingClasses}><div></div></div>
             </div>

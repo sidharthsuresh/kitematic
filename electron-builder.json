@@ -1,5 +1,5 @@
 {
-  "appId": "com.docker.kitematic",
+  "appId": "com.docker.tripod",
   "asar": true,
   "directories": {
     "output": "./dist/"
@@ -22,7 +22,7 @@
   "msi": {
     "warningsAsErrors": false
   },
-  "productName": "Kitematic",
+  "productName": "Tripod",
   "win": {
     "extraResources": "./resources/**/*",
     "icon": "./util/kitematic.ico",

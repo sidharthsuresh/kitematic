@@ -13,9 +13,9 @@ run: install
 release: install
 	npm install electron-packager
 	npm run release
-	mv release/Kitematic-Mac.zip release/Kitematic-$(VERSION)-Mac.zip
-	mv release/Kitematic-Ubuntu.zip release/Kitematic-$(VERSION)-Ubuntu.zip
-	mv release/Kitematic-Windows.zip release/Kitematic-$(VERSION)-Windows.zip
+	mv release/Tripod-Mac.zip release/Tripod-$(VERSION)-Mac.zip
+	mv release/Tripod-Ubuntu.zip release/Tripod-$(VERSION)-Ubuntu.zip
+	mv release/Tripod-Windows.zip release/Tripod-$(VERSION)-Windows.zip
 
 #zip:
 #	docker container run --rm -it -w /to_zip -v $(PWD)/dist/Kitematic\ \(Beta\)-darwin-x64:/to_zip -v $(PWD)/dist:/out kramos/alpine-zip -r /out/Kitematic-$(VERSION)-Mac.zip .
@@ -37,7 +37,7 @@ HUGO_BIND_IP=0.0.0.0
 DOCS_MOUNT := $(if $(DOCSDIR),-v $(CURDIR)/$(DOCSDIR):/$(DOCSDIR))
 DOCSPORT := 8000
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
-DOCKER_DOCS_IMAGE := kitematic-docs$(if $(GIT_BRANCH),:$(GIT_BRANCH))
+DOCKER_DOCS_IMAGE := tripod-docs$(if $(GIT_BRANCH),:$(GIT_BRANCH))
 DOCKER_RUN_DOCS := docker run --rm -it $(DOCS_MOUNT)
 
 docs: docs-build
@@ -50,4 +50,3 @@ docs-shell: docs-build
 
 docs-build:
 	docker build -t "$(DOCKER_DOCS_IMAGE)" -f docs/Dockerfile .
-

@@ -1,6 +1,6 @@
 get-process VBox* | stop-process
 
-$paths = '~/Kitematic/', '~/.docker', '~/.VirtualBox/', '~/Kitematic-bins/', '~/Library/Application Support/Kitematic'
+$paths = '~/Tripod/', '~/.docker', '~/.VirtualBox/', '~/Tripod-bins/', '~/Library/Application Support/Tripod'
 
 Foreach($path in $paths) {
     if(test-path $path) {

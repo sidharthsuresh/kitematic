@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 sudo rm -f /usr/local/bin/docker*
 pkill VirtualBox
 pkill VBox
-rm -rf ~/Library/Application\ Support/Kitematic/
+rm -rf ~/Library/Application\ Support/Tripod/
 rm -rf ~/.docker
 rm -rf ~/Library/VirtualBox/
-rm -rf ~/Kitematic
+rm -rf ~/Tripod
 $DIR/VirtualBox_Uninstall.tool
