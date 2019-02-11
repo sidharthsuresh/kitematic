@@ -106,23 +106,7 @@ var Header = React.createClass({
   },
   renderWindowButtons: function () {
     let buttons;
-    if (util.isWindows()) {
-      buttons = (
-        <div className="windows-buttons">
-        <div className="windows-button button-minimize enabled" onClick={this.handleMinimize}><div className="icon"></div></div>
-        <div className={`windows-button ${this.state.fullscreen ? 'button-fullscreenclose' : 'button-fullscreen'} enabled`} onClick={this.handleFullscreen}><div className="icon"></div></div>
-        <div className="windows-button button-close enabled" onClick={this.handleClose}></div>
-        </div>
-      );
-    } else {
-      buttons = (
-        <div className="buttons">
-        <div className="button button-close enabled" onClick={this.handleClose}></div>
-        <div className="button button-minimize enabled" onClick={this.handleMinimize}></div>
-        <div className="button button-fullscreen enabled" onClick={this.handleFullscreen}></div>
-        </div>
-      );
-    }
+
     return buttons;
   },
   renderDashboardHeader: function () {
