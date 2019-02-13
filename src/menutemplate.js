@@ -53,16 +53,6 @@ var MenuTemplate = function () {
         type: 'separator'
       },
       {
-        label: 'Hide Kitematic',
-        accelerator: util.CommandOrCtrl() + '+H',
-        selector: 'hide:'
-      },
-      {
-        label: 'Hide Others',
-        accelerator: util.CommandOrCtrl() + '+Alt+H',
-        selector: 'hideOtherApplications:'
-      },
-      {
         label: 'Show All',
         selector: 'unhideAllApplications:'
       },
